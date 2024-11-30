@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>San Martin: Bermio</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/prism.min.css" />
+<link rel="stylesheet" href="css/prism-one-dark.css" />
+<link rel="stylesheet" href="css/dimbox.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<!--
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark justify-content-between bg-primary px-3">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/sm-32.png" width="32" height="32" alt="San Martin" />
+            <span class="visually-hidden">San Martin</span>
+            <span>San Martin - Bermio</span>
+        </a>
+        <button type="button" id="menuBtn" class="d-md-none" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu-btn-icon">
+                <span class="menu-btn-bar"></span>
+                <span class="menu-btn-bar"></span>
+                <span class="menu-btn-bar"></span>
+                <span class="menu-btn-bar"></span>
+            </span>
+            <span class="visually-hidden">Toggle navigation</span>
+        </button>
+        <div id="mainMenu">
+            <ul class="navbar-nav align-items-center ms-md-auto my-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sm-2024">2024</a>
+                </li>
+<!--
+                <li class="nav-item">
+                    <a href="https://github.com/hphaavikko/dimbox" target="_blank" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        <span class="visually-hidden">GitHub</span>
+                    </a>
+                </li>
+-->
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="container-fluid bg-white px-3 py-5">
+<!--
+        <section id="sm-2024" class="mb-5">
+            <p class="lead">Bermioko <strong>San Martin</strong> auzoko jaidxen galeridxek:</p>
+        </section>
+-->
+<!--        
+        <section id="demo" class="mb-5">
+
+            <h2>Demo</h2>
+
+            <section id="demo-single-image" class="mb-5">
+
+                <h3>Single image</h3>
+
+                <div class="images-container">
+                    <a href="images/IMG_3128_dinosaur.jpg" class="link-thumbnail" data-dimbox="dinosaur" data-dimbox-caption="Some sort of dinosaur.">
+                        <img src="images/thumbnails/IMG_3128_dinosaur.jpg" alt="Dinosaur" />
+                    </a>
+                </div>
+
+            </section>
+-->
+
+            <section id="sm-2024" class="mb-5">
+                <div data-json="sm-2024.json">
+                </div>
+
+<!--
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+-->
+            </section>
+
+<!--
+            <section id="demo-mixed-content-types" class="mb-5">
+
+                <h3>Gallery: Mixed content types</h3>
+
+                <div class="images-container">
+                    <a href="images/_MG_5930_hoi-an-kalastajat.jpg" class="link-thumbnail" data-dimbox="mixed" data-dimbox-caption="Fishers in Hoi An.">
+                        <img src="images/thumbnails/_MG_5930_hoi-an-kalastajat.jpg" alt="Fishers in Hoi An" />
+                    </a>
+
+                    <a href="videos/Sideways-and-Lies-teaser-out-now-1080x1080px.mp4?v=3453443543" class="link-thumbnail" data-dimbox="mixed" data-dimbox-caption="Brooke Logans: Sideways and Lies">
+                        <img src="images/thumbnails/brooke-loganss-sideways-and-lies.jpg" alt="Brooke Logans - Sideways and Lies" />
+                    </a>
+
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-thumbnail" data-dimbox="mixed" data-dimbox-caption="Wikipedia article on JavaScript.">
+                        <img src="images/thumbnails/wikipedia-javascript.jpg" alt="Wikipedia article on JavaScript" />
+                    </a>
+
+                    <a href="https://api.chucknorris.io/jokes/random" class="link-thumbnail" data-dimbox="mixed" data-dimbox-caption="Chuck Norris API" data-dimbox-type="ajax">
+                        <img src="images/thumbnails/chuck-norris-api.png" alt="Chick Norris API" />
+                    </a>
+
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+                    <div class="link-thumbnail invisible"></div>
+                </div>
+            </section>
+-->
+<!--
+            <section id="demo-misc-examples" class="mb-5">
+                <h3>Misc examples</h3>
+
+                <a href="https://en.wikipedia.org/wiki/JavaScript" class="btn btn-primary mb-2" data-dimbox="iframeExample" data-dimbox-caption="Wikipedia article on JavaScript.">
+                    Type: iframe
+                </a>
+
+                <a href="#inlineContent" class="btn btn-primary mb-2" data-dimbox="inlineExample" data-dimbox-caption="This is an inline content example.">
+                    Type: inline
+                </a>
+
+                <a href="https://api.chucknorris.io/jokes/random" class="btn btn-primary mb-2" data-dimbox="ajaxExample" data-dimbox-caption="This is an ajax content example." data-dimbox-type="ajax">
+                    Type: ajax
+                </a>
+
+                <a href="https://api.punkapi.com/v2/beers/random" class="btn btn-primary mb-2" data-dimbox="ajaxErrorExample" data-dimbox-caption="This is an ajax content example failing to load remote content." data-dimbox-type="ajax">
+                   Type: ajax (fail to load content)
+                </a>
+
+                <a href="https://www.youtube.com/embed/j4a2uCvbfAc" class="btn btn-primary mb-2" data-dimbox="youtubeExample" data-dimbox-ratio="16x9">
+                    YouTube embed
+                </a>
+
+                <a href="https://player.vimeo.com/video/43588364" class="btn btn-primary mb-2" data-dimbox="vimeoExample" data-dimbox-ratio="16x9">
+                    Vimeo embed
+                </a>
+
+                <a href="images/_MG_6396_salakuva.jpg" class="btn btn-primary mb-2" data-dimbox="longCaptionExample" data-dimbox-caption="This image has a really long caption. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque pariatur blanditiis explicabo praesentium autem amet eligendi possimus esse saepe nobis, a doloremque tempore enim ad, laudantium velit, sed ex nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita distinctio magni assumenda qui aspernatur perspiciatis mollitia aut? Alias nisi pariatur asperiores. Sapiente non hic velit mollitia sequi? Consequatur, distinctio.">
+                    Image with a really long caption
+                </a>
+
+                <a href="https://sample-videos.com/img/Sample-jpg-image-30mb.jpg" class="btn btn-primary mb-2" data-dimbox="hugeImageSample" data-dimbox-caption="Wow, this image really is huge!">
+                    Huge image without cache
+                </a>
+
+            </section>
+
+        </section>
+-->
+
+    </div>
+
+</main>
+
+<footer class="text-center p-3">
+    <small>zital</small>
+</footer>
+
+<script src="js/prism.min.js"></script>
+<script src="js/dimbox.min.js"></script>
+<!--
+<script src="js/dimbox-demo.js"></script>
+-->
+<script>
+window.addEventListener("load", function()
+{
+    function init()
+    {
+        document.querySelectorAll('div[data-json]').forEach(function(d)
+        {
+            loadImgs(d)
+        })
+    }
+    function loadImgs(d)
+    {
+        let url = d.getAttribute('data-json')
+        loadJson(d, url)
+    }
+    function loadJson(d, url)
+    {
+        fetch(url)
+            .then(response =>
+            {
+                return response.json()
+            })
+            .then(data =>
+            {
+                let year = url.match(/[0-9]+/)[0]
+                let ddb  = url.replace(/\.json/, '')
+                let ic   = document.createElement('div')
+                let zip  = document.createElement('a')
+
+                ic.classList.add('images-container')
+                data.resources.forEach(function(e)
+                {
+                    let thumb = e.img.replace(/([^\.])(\.[^$]+$)/, '$1-thumb$2')
+                    let a = document.createElement('a')
+                    a.classList.add('link-thumbnail')
+                    a.setAttribute('data-dimbox', ddb)
+                    a.href=e.img
+                    a.title=e.title
+                    let img = document.createElement('img')
+                    img.src = thumb
+                    img.alt = e.title                    
+                    a.appendChild(img)
+                    ic.appendChild(a)
+                })
+                let h3 = document.createElement('h3')
+                h3.appendChild(document.createTextNode(year))
+
+                let p = document.createElement('p')
+                p.classList.add('lead')
+                p.appendChild(document.createTextNode(data.description))
+
+                zip.href   = data.zip
+                zip.title  = data.zip
+                img        = document.createElement('img')
+                img.src    = 'https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/zip-icon.png'
+                img.width  = '32'
+                img.height = '32'
+                img.alt    = data.zip
+                zip.appendChild(img)
+
+                d.appendChild(h3)
+                d.appendChild(p)
+                d.appendChild(ic)
+                d.appendChild(zip)
+
+                dimbox.init()
+            })
+            .catch(error =>
+            {
+            });
+    }
+    init()
+});
+</script>
+
+</body>
+
+</html>
