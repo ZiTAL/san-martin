@@ -16,11 +16,13 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark justify-content-between bg-primary px-3">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/sm-32.png" width="32" height="32" alt="San Martin" />
-            <span class="visually-hidden">San Martin</span>
-            <span>San Martin - Bermio</span>
+
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/sm-32.png" width="32" height="32" alt="San Martin - Bermio" />
+            &nbsp;
+            <h1 class="h2 m-0">San Martin - Bermio</h1>
         </a>
+
         <button type="button" id="menuBtn" class="d-md-none" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="menu-btn-icon">
                 <span class="menu-btn-bar"></span>
@@ -30,21 +32,20 @@
             </span>
             <span class="visually-hidden">Toggle navigation</span>
         </button>
+
         <div id="mainMenu">
             <ul class="navbar-nav align-items-center ms-md-auto my-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#sm-2024">2024</a>
+                    <a class="nav-link" href="#sm-2024"><h2 class="h3 m-0">2024</h2></a>
                 </li>
-<!--
                 <li class="nav-item">
-                    <a href="https://github.com/hphaavikko/dimbox" target="_blank" class="nav-link">
+                    <a href="https://github.com/ZiTAL/san-martin" target="_blank" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg>
                         <span class="visually-hidden">GitHub</span>
                     </a>
                 </li>
--->
             </ul>
         </div>
     </nav>
@@ -53,35 +54,9 @@
 <main>
 
     <div class="container-fluid bg-white px-3 py-5">
-<!--
-        <section id="sm-2024" class="mb-5">
-            <p class="lead">Bermioko <strong>San Martin</strong> auzoko jaidxen galeridxek:</p>
-        </section>
--->
-<!--        
-        <section id="demo" class="mb-5">
-
-            <h2>Demo</h2>
-
-            <section id="demo-single-image" class="mb-5">
-
-                <h3>Single image</h3>
-
-                <div class="images-container">
-                    <a href="images/IMG_3128_dinosaur.jpg" class="link-thumbnail" data-dimbox="dinosaur" data-dimbox-caption="Some sort of dinosaur.">
-                        <img src="images/thumbnails/IMG_3128_dinosaur.jpg" alt="Dinosaur" />
-                    </a>
-                </div>
-
-            </section>
--->
 
             <section id="sm-2024" class="mb-5" data-json="sm-2024.json">
 <!--
-                    <div class="link-thumbnail invisible"></div>
-                    <div class="link-thumbnail invisible"></div>
-                    <div class="link-thumbnail invisible"></div>
-                    <div class="link-thumbnail invisible"></div>
                     <div class="link-thumbnail invisible"></div>
 -->
             </section>
@@ -165,6 +140,7 @@
 
 <script src="js/prism.min.js"></script>
 <script src="js/dimbox.min.js"></script>
+<script src="js/dimbox-demo.js"></script>
 <script>
 window.addEventListener("load", function()
 {
@@ -210,6 +186,8 @@ window.addEventListener("load", function()
                     ic.appendChild(a)
                 })
                 let h3 = document.createElement('h3')
+                h3.classList.add('h4')
+                h3.classList.add('m-0')
                 h3.appendChild(document.createTextNode(year))
 
                 let p = document.createElement('p')
